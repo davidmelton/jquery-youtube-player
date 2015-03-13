@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>simplePlayer.js</title>
+
+<style>
+
+	#video {
+		position: relative;
+		background: #000;
+		width: 640px;
+		margin: 20px auto;
+	}
+	#video img, #video iframe {
+		display: block;
+	}
+	#play {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		cursor: pointer;
+		background: url('play-button.png') no-repeat 50% 50%;
+		background-size: auto, cover;
+		z-index: 9999;
+	}
+	#play:hover {
+		background-color: rgba(0,0,0,0.2) !important;
+	}
+</style>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script src="simplePlayer.js"></script>
+
+<script>
+	$("document").ready(function() {
+		$("#video").simplePlayer();
+	});
+</script>
+</head>
+
+<body>
+
+<div data-video="be0aFAqIhXk" id="video">
+	<img src="http://placehold.it/640x360&text=screenshot">
+</div>
+
+</body>
+</html>
